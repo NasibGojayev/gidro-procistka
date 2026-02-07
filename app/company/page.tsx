@@ -1,0 +1,57 @@
+import { StatsGrid } from "@/components/company/StatsGrid";
+import Link from "next/link";
+
+export const metadata = {
+    title: "О компании | ГидроРобот",
+    description: "Информация о компании ГидроРобот, наши преимущества и статистика."
+};
+
+export default function CompanyPage() {
+    return (
+        <div className="space-y-12">
+            {/* Intro */}
+            <section className="text-lg text-gray-300 leading-relaxed">
+                <p>
+                    Наша компания — это профессиональная команда сантехников с богатым опытом и современным парком оборудования.
+                    Мы специализируемся на устранении засоров любой сложности, от квартирных труб до промышленных канализационных систем,
+                    гарантируя качество и оперативность.
+                </p>
+            </section>
+
+            {/* Stats */}
+            <section>
+                <h3 className="text-2xl font-bold mb-6 text-white">Компания в цифрах</h3>
+                <StatsGrid />
+            </section>
+
+            {/* Advantages */}
+            <section>
+                <h3 className="text-2xl font-bold mb-6 text-white">Основные преимущества нашей компании</h3>
+                <ol className="list-decimal pl-5 space-y-4 text-gray-300 marker:text-primary marker:font-bold">
+                    <li className="pl-2">
+                        <strong className="text-white">Оперативность.</strong> Приезжаем на вызов в течение 60 минут в любой район Уфы.
+                    </li>
+                    <li className="pl-2">
+                        <strong className="text-white">Современное оборудование.</strong> Используем гидродинамические и электромеханические машины Rothenberger для безопасной и эффективной очистки.
+                    </li>
+                    <li className="pl-2">
+                        <strong className="text-white">Честные цены.</strong> Озвучиваем стоимость работ до начала выполнения и не меняем её в процессе. Оплата только за результат.
+                    </li>
+                    <li className="pl-2">
+                        <strong className="text-white">Гарантия качества.</strong> Даем гарантию на выполненные работы. Если проблема вернется — исправим бесплатно.
+                    </li>
+                </ol>
+            </section>
+
+            {/* Closing CTA */}
+            <section className="bg-[#252525] p-6 rounded-xl border border-[#333] mt-8">
+                <p className="text-white mb-4">
+                    Мы готовы решить любую проблему с канализацией быстро и профессионально. Не откладывайте вызов специалиста!
+                </p>
+                <Link href="/contacts" className="inline-block bg-primary hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                    Вызвать мастера
+                </Link>
+            </section>
+        </div>
+    );
+}

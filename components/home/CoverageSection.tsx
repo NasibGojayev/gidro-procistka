@@ -1,0 +1,59 @@
+import { homePageData } from "@/content/pages";
+
+export function CoverageSection() {
+    const { coverage } = homePageData;
+
+    return (
+        <section className="main-profitably mt-12 mb-12 font-sans">
+            <div className="container mx-auto px-4 md:px-6">
+                {/* Header */}
+                <div className="row mb-12">
+                    <div className="col-xs-12 col-md-8 col-md-offset-2 text-center mx-auto">
+                        <h2 className="text-3xl font-bold text-gray-900">{coverage.title}</h2>
+                    </div>
+                </div>
+
+                <div className="flex flex-col lg:flex-row gap-12 items-center">
+                    {/* List Column */}
+                    <div className="w-full lg:w-1/2">
+                        <div className="grid gap-8">
+                            {coverage.items.map((item, index) => (
+                                <div key={index} className="flex gap-4">
+                                    {/* Icon Image */}
+                                    <div className="shrink-0 pt-1">
+                                        <div className="h-16 w-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                                            <img
+                                                src={item.icon}
+                                                alt={item.label}
+                                                className="h-10 w-10 object-contain"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="main-profitably--title text-[#01bbbf] text-2xl font-bold mb-2">
+                                            {item.label}
+                                        </div>
+                                        <p className="text-gray-600 text-sm leading-relaxed">
+                                            Устранение засора в трубах, ванной, раковины, мойки, унитазе, канализации, слива, сифона
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Image Column */}
+                    <div className="w-full lg:w-1/2 text-center hidden md:block">
+                        <div className="h-[400px] w-full flex items-center justify-center">
+                            <img
+                                src={coverage.mainImage}
+                                alt={coverage.title}
+                                className="max-h-full max-w-full object-contain"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}

@@ -1,0 +1,25 @@
+import { MetadataRoute } from 'next';
+import { services } from '@/content/services';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+    const baseUrl = 'https://prochistkakanalizacii-v-ufe.ru';
+
+    const serviceRoutes = services.map((service) => ({
+        url: `${baseUrl}/services/${service.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+    }));
+
+    const staticRoutes = [
+        '',
+        '/services',
+    ].map((route) => ({
+        url: `${baseUrl}${route}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: route === '' ? 1 : 0.8,
+    }));
+
+    return [...staticRoutes, ...serviceRoutes];
+}
