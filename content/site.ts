@@ -7,7 +7,7 @@ export const siteConfig = {
     cleanPhone2: "+79273555358",
     whatsapp: "https://api.whatsapp.com/send/?phone=79173510409",
     address: "г.Уфа, ул. Бакалинская, 7",
-    email: "info@prochistkakanalizacii-v-ufe.ru",
+    email: "info@gidroprocistkaufa.ru",
     workingHours: "Ежедневно, круглосуточно",
     socials: {
         vk: "#",

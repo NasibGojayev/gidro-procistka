@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://prochistkakanalizacii-v-ufe.ru';
+    const baseUrl = 'https://gidroprocistkaufa.ru';
 
     return {
         rules: {
