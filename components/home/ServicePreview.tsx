@@ -1,6 +1,7 @@
 import { services } from "@/content/services";
 import { homePageData } from "@/content/pages";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export function ServicePreview() {
@@ -31,12 +32,14 @@ export function ServicePreview() {
                             <div className="service text-center border-[3px] border-[#01bbbf] m-0 h-full flex flex-col p-0 bg-white hover:bg-gray-50 transition-colors rounded-none">
                                 <Link href={`/${service.slug}/`} className="flex flex-col h-full relative group">
                                     {/* Service Image */}
-                                    <div className="service--img flex items-center justify-center p-4">
-                                        <img
+                                    <div className="service--img flex items-center justify-center p-4 relative h-[250px] w-full">
+                                        <Image
                                             src={service.image}
                                             alt={service.title}
                                             title={service.title}
-                                            className="max-h-[250px] max-w-[210px] object-contain"
+                                            fill
+                                            className="object-contain"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                                         />
                                     </div>
 

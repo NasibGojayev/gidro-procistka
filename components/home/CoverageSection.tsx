@@ -1,4 +1,5 @@
 import { homePageData } from "@/content/pages";
+import Image from "next/image";
 
 export function CoverageSection() {
     const { coverage } = homePageData;
@@ -21,11 +22,13 @@ export function CoverageSection() {
                                 <div key={index} className="flex gap-4">
                                     {/* Icon Image */}
                                     <div className="shrink-0 pt-1">
-                                        <div className="h-16 w-16 bg-gray-100 rounded-lg flex items-center justify-center">
-                                            <img
+                                        <div className="h-16 w-16 bg-gray-100 rounded-lg flex items-center justify-center relative">
+                                            <Image
                                                 src={item.icon}
                                                 alt={item.label}
-                                                className="h-10 w-10 object-contain"
+                                                width={40}
+                                                height={40}
+                                                className="object-contain"
                                             />
                                         </div>
                                     </div>
@@ -44,11 +47,13 @@ export function CoverageSection() {
 
                     {/* Image Column */}
                     <div className="w-full lg:w-1/2 text-center hidden md:block">
-                        <div className="h-[400px] w-full flex items-center justify-center">
-                            <img
+                        <div className="h-[400px] w-full flex items-center justify-center relative">
+                            <Image
                                 src={coverage.mainImage}
                                 alt={coverage.title}
-                                className="max-h-full max-w-full object-contain"
+                                fill
+                                className="object-contain"
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
                     </div>

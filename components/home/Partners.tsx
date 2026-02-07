@@ -1,6 +1,7 @@
 "use client";
 
 import { homePageData } from "@/content/pages";
+import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { useEffect, useState } from "react";
@@ -26,12 +27,14 @@ export function Partners() {
                     <div className="flex -ml-4">
                         {partners.items.map((partner: any, index: number) => (
                             <div key={index} className="flex-[0_0_50%] md:flex-[0_0_25%] lg:flex-[0_0_20%] min-w-0 pl-4">
-                                <div className="partner-square h-32 border border-gray-200 flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all hover:border-[#01bbbf] hover:shadow-sm bg-white">
-                                    <img
+                                <div className="partner-square h-32 border border-gray-200 flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all hover:border-[#01bbbf] hover:shadow-sm bg-white relative">
+                                    <Image
                                         src={partner.img}
                                         alt={partner.name}
                                         title={partner.name}
-                                        className="max-w-full max-h-full object-contain"
+                                        fill
+                                        className="object-contain p-4"
+                                        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
                                     />
                                 </div>
                             </div>

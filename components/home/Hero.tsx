@@ -2,6 +2,7 @@
 
 import { homePageData } from "@/content/pages";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { useEffect, useState } from "react";
@@ -24,14 +25,16 @@ export function Hero() {
                 <div className="flex h-full">
                     {slides.map((slide, index) => (
                         <div key={index} className="relative flex-[0_0_100%] min-w-0 w-full h-[600px] md:h-[700px]">
-                            {/* Background Image */}
-                            <div
-                                className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat"
-                                style={{
-                                    backgroundImage: "url('/images/hero/hero-background.webp')",
-                                }}
-                            >
-                                <div className="absolute inset-0 bg-black/50" />
+                            <div className="absolute top-0 left-0 w-full h-full">
+                                <Image
+                                    src="/images/hero/hero-background.webp"
+                                    alt="Hero Background"
+                                    fill
+                                    priority={index === 0}
+                                    className="object-cover object-center"
+                                    quality={90}
+                                />
+                                <div className="absolute inset-0 bg-black/50 z-10" />
                             </div>
 
                             <div className="container relative z-10 mx-auto px-4 md:px-6 h-full flex items-center">

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone, Droplet, ChevronDown, MoreHorizontal } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { siteConfig } from "@/content/site";
@@ -36,10 +37,13 @@ export function Header() {
                         {/* Left Column: Logo and Mobile Contacts */}
                         <div className="flex flex-col items-start gap-2">
                             <Link href="/" className="flex-shrink-0">
-                                <img
+                                <Image
                                     src="/images/logo-gidrorobot.webp"
                                     alt="Прочистка канализации"
                                     title="Прочистка канализации"
+                                    width={200}
+                                    height={64}
+                                    priority
                                     className="h-12 md:h-16 w-auto object-contain"
                                 />
                             </Link>
