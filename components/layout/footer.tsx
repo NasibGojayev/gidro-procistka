@@ -46,9 +46,7 @@ export function Footer() {
                         <Link href="/privacy" className="hover:text-primary transition-colors">
                             Политика конфиденциальности
                         </Link>
-                        <div className="opacity-50 hover:opacity-100 transition-opacity mt-2">
-                            <span className="text-xs">Разработка сайта — kla-ss.ru</span>
-                        </div>
+
                     </div>
 
                     {/* Contacts Right */}
