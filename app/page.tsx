@@ -4,8 +4,6 @@ import { EquipmentGrid } from "@/components/home/EquipmentGrid";
 import { Benefits } from "@/components/home/Benefits";
 import { RequestFormSection } from "@/components/home/RequestFormSection";
 import { AboutSection } from "@/components/home/AboutSection";
-import { TeamSection } from "@/components/home/TeamSection";
-import { Partners } from "@/components/home/Partners";
 import { CoverageSection } from "@/components/home/CoverageSection";
 import { InfoStrip } from "@/components/home/InfoStrip";
 import { ReviewsSection } from "@/components/home/ReviewsSection";
@@ -30,8 +28,6 @@ export default function Home() {
       <Benefits />
       <RequestFormSection />
       <AboutSection />
-      <TeamSection />
-      <Partners />
       <CoverageSection />
       <InfoStrip />
       <ReviewsSection />

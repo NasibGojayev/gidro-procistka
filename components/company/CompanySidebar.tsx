@@ -6,9 +6,7 @@ import { usePathname } from "next/navigation";
 const companyLinks = [
     { label: "О компании", href: "/company" },
     { label: "Отзывы", href: "/company/reviews" },
-    { label: "Наша команда", href: "/company/staff" },
     { label: "Часто задаваемые вопросы", href: "/company/faq" },
-    { label: "Партнеры", href: "/company/partners" },
     { label: "Прайс-лист", href: "/company/price" },
 ];
 
