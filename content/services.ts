@@ -48,7 +48,7 @@ export const services = [
         }
     },
     {
-        slug: "promyvka-kanalizatsii-",
+        slug: "promyvka-kanalizatsii",
         title: "Гидродинамическая промывка",
         description: "Эффективная очистка труб водой под высоким давлением без повреждения стенок.",
         price: "от 1100 ₽",
@@ -71,7 +71,7 @@ export const services = [
         }
     },
     {
-        slug: "teleinspektsiya-trub-",
+        slug: "teleinspektsiya-trub",
         title: "Телеинспекция и видеоинспекция труб",
         description: "Диагностика трубопроводов с помощью видеокамеры для выявления дефектов и засоров.",
         price: "от 590 ₽",
