@@ -4,7 +4,7 @@ import { homePageData } from "@/content/pages";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import { useEffect, useState } from "react";
+
 
 export function Partners() {
     const { partners } = homePageData as any;
@@ -23,8 +23,8 @@ export function Partners() {
                     </div>
                 </div>
 
-                <div className="row mt-10" ref={emblaRef}>
-                    <div className="flex -ml-4">
+                <div className="overflow-hidden mt-10" ref={emblaRef}>
+                    <div className="flex -ml-4 touch-pan-y">
                         {partners.items.map((partner: any, index: number) => (
                             <div key={index} className="flex-[0_0_50%] md:flex-[0_0_25%] lg:flex-[0_0_20%] min-w-0 pl-4">
                                 <div className="partner-square h-32 border border-gray-200 flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all hover:border-[#01bbbf] hover:shadow-sm bg-white relative">
