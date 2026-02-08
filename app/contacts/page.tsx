@@ -5,7 +5,10 @@ import MapWrapper from "@/components/contacts/MapWrapper";
 
 export const metadata: Metadata = {
     title: "Контакты | ГидроРобот",
-    description: "Свяжитесь с нами для вызова сантехника или консультации."
+    description: "Свяжитесь с нами для вызова сантехника или консультации.",
+    alternates: {
+        canonical: 'https://gidroprocistkaufa.ru/contacts',
+    },
 };
 
 export default function ContactsPage() {
@@ -32,11 +35,6 @@ export default function ContactsPage() {
                                 <li>
                                     <a href="tel:+79173510409" className="hover:text-primary transition-colors">
                                         +7 917 351 04 09
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tel:+79273555358" className="hover:text-primary transition-colors">
-                                        +7 927 355 53 58
                                     </a>
                                 </li>
                             </ul>

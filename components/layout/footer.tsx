@@ -54,9 +54,6 @@ export function Footer() {
                         <a href={`tel:${siteConfig.cleanPhone}`} className="text-white font-bold hover:text-[#01bbbf] text-2xl transition-colors">
                             {siteConfig.phone}
                         </a>
-                        <a href={`tel:${siteConfig.cleanPhone2}`} className="text-white font-bold hover:text-[#01bbbf] text-2xl transition-colors">
-                            {siteConfig.phone2}
-                        </a>
                         <a href={`mailto:${siteConfig.email}`} className="text-gray-400 hover:text-white text-sm transition-colors">
                             {siteConfig.email}
                         </a>

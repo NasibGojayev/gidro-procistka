@@ -3,7 +3,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Политика конфиденциальности | ГидроРобот",
-    description: "Политика конфиденциальности и обработки персональных данных компании ГидроРобот."
+    description: "Политика конфиденциальности и обработки персональных данных компании ГидроРобот.",
+    alternates: {
+        canonical: 'https://gidroprocistkaufa.ru/privacy',
+    },
 };
 
 export default function PrivacyPage() {

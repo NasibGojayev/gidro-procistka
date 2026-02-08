@@ -29,6 +29,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return {
         title: `${service.title} | ${siteConfig.name}`,
         description: service.description,
+        alternates: {
+            canonical: `https://gidroprocistkaufa.ru/${slug}`,
+        },
         openGraph: {
             title: `${service.title} | ${siteConfig.name}`,
             description: service.description,
@@ -184,13 +187,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                                 >
                                     <Phone className="h-5 w-5" />
                                     <span>{siteConfig.phone}</span>
-                                </a>
-                                <a
-                                    href={`tel:${siteConfig.cleanPhone2}`}
-                                    className="flex items-center justify-center gap-2 text-xl font-bold text-[#01bbbf] hover:text-white transition-colors mb-2"
-                                >
-                                    <Phone className="h-5 w-5" />
-                                    <span>{siteConfig.phone2}</span>
                                 </a>
                                 <div className="text-xs text-gray-500">Круглосуточно, без выходных</div>
                             </div>

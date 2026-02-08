@@ -3,7 +3,10 @@ import Link from "next/link";
 
 export const metadata = {
     title: "О компании | ГидроРобот",
-    description: "Информация о компании ГидроРобот, наши преимущества и статистика."
+    description: "Информация о компании ГидроРобот, наши преимущества и статистика.",
+    alternates: {
+        canonical: 'https://gidroprocistkaufa.ru/company',
+    },
 };
 
 export default function CompanyPage() {

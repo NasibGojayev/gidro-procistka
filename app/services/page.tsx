@@ -2,6 +2,16 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ServiceCard } from "@/components/services/ServiceCard";
 import { services } from "@/content/services";
 import { Section } from "@/components/ui/section";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Услуги по прочистке канализации | ГидроРобот",
+    description: "Услуги по устранению засоров и прочистке канализации в Уфе. Механическая и гидродинамическая промывка труб.",
+    alternates: {
+        canonical: 'https://gidroprocistkaufa.ru/services',
+    },
+};
+
 
 export default function ServicesPage() {
     const breadcrumbItems = [

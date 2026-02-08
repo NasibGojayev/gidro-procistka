@@ -50,17 +50,30 @@ export function Header() {
 
                             {/* Mobile Contacts - Visible on Mobile */}
                             <div className="md:hidden flex flex-col text-sm space-y-1 mt-1">
-                                <a href="https://api.whatsapp.com/send/?phone=79173510409" className="flex items-center gap-2 text-[#25D366] font-medium">
-                                    <FaWhatsapp className="h-4 w-4" />
-                                    <span>Написать в WhatsApp</span>
-                                </a>
+                                <div className="flex items-center gap-2">
+                                    <a
+                                        href="https://api.whatsapp.com/send/?phone=79173510409"
+                                        className="flex items-center gap-2 text-[#25D366] font-medium hover:underline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <FaWhatsapp className="h-4 w-4" />
+                                        <span>WhatsApp</span>
+                                    </a>
+                                    <button
+                                        onClick={() => {
+                                            navigator.clipboard.writeText('+79173510409');
+                                            alert('Номер скопирован!');
+                                        }}
+                                        className="text-xs text-gray-500 hover:text-gray-700 underline"
+                                        title="Скопировать номер телефона"
+                                    >
+                                        (скопировать)
+                                    </button>
+                                </div>
                                 <a href={`tel:${siteConfig.cleanPhone}`} className="flex items-center gap-2 text-gray-800 font-bold">
                                     <Phone className="h-4 w-4" />
                                     <span>{siteConfig.phone}</span>
-                                </a>
-                                <a href={`tel:${siteConfig.cleanPhone2}`} className="flex items-center gap-2 text-gray-800 font-bold">
-                                    <Phone className="h-4 w-4" />
-                                    <span>{siteConfig.phone2}</span>
                                 </a>
                             </div>
                         </div>

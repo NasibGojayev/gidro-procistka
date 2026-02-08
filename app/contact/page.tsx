@@ -59,17 +59,29 @@ export default function ContactPage() {
                             </div>
                         </div>
 
-                        {/* Map Embed - Mocked with placeholder as Google Maps requires API Key or simple iframe url which is not provided */}
-                        <div className="mt-8 h-[300px] w-full rounded-xl bg-gray-200 overflow-hidden relative">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.428490145536!2d49.8517592765324!3d40.37719087144594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0f5e01!2zQmFrxLE!5e0!3m2!1sen!2saz!4v1700000000000!5m2!1sen!2saz"
-                                width="100%"
-                                height="100%"
-                                style={{ border: 0 }}
-                                allowFullScreen
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                            />
+                        {/* Address Display - Russia-safe fallback (no Google Maps) */}
+                        <div className="mt-8 h-[300px] w-full rounded-xl bg-gray-100 overflow-hidden relative flex flex-col items-center justify-center p-8 text-center border border-gray-200">
+                            <MapPin className="h-12 w-12 text-blue-600 mb-4" />
+                            <p className="text-lg font-semibold text-gray-900 mb-2">{siteConfig.address}</p>
+                            <p className="text-sm text-gray-600 mb-6">г.Уфа, ул. Бакалинская, 7</p>
+                            <div className="flex gap-4">
+                                <a
+                                    href="https://yandex.ru/maps/-/CDdkfRXw"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
+                                >
+                                    Открыть в Яндекс Картах
+                                </a>
+                                <a
+                                    href="https://2gis.ru/ufa/geo/70030076163808988"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm"
+                                >
+                                    Открыть в 2ГИС
+                                </a>
+                            </div>
                         </div>
                     </div>
 
