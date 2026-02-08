@@ -6,9 +6,9 @@ export function AboutSection() {
             <div className="container mx-auto px-4 md:px-6">
                 {/* About Company Text */}
                 <div className="mb-16">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-8">О компании</h2>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-8">Как мы работаем</h2>
                     <div className="font-md font-md_light text-lg text-gray-600 leading-relaxed font-light">
-                        В нашей компании работают дипломированные специалисты, которые регулярно проходят переобучение и повышение квалификации. Они выполняют все заказы профессионально и добросовестно.
+                        Выполняем устранение засоров в Уфе более 10 лет. Наши специалисты используют телеинспекцию для точной диагностики и подбирают оптимальный метод прочистки — механический или гидродинамический.
                     </div>
                 </div>
 

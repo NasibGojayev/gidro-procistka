@@ -39,7 +39,7 @@ export function Benefits() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="row">
                     <div className="col-xs-12 col-md-8 col-md-offset-2 text-center mx-auto mb-12">
-                        <h2 className="text-3xl font-bold text-gray-900">Почему стоит выбрать нашу компанию?</h2>
+                        <h2 className="text-3xl font-bold text-gray-900">Почему обращаются к нам для устранения засоров</h2>
                     </div>
                 </div>
 
