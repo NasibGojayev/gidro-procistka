@@ -14,7 +14,7 @@ export function Footer() {
                         <Link href="/company" className="hover:text-[#01bbbf] transition-colors border-b border-transparent hover:border-[#01bbbf] pb-1">Компания</Link>
                         <Link href="/news" className="hover:text-[#01bbbf] transition-colors border-b border-transparent hover:border-[#01bbbf] pb-1">Новости</Link>
                         <Link href="/services" className="hover:text-[#01bbbf] transition-colors border-b border-transparent hover:border-[#01bbbf] pb-1">Услуги</Link>
-                        <Link href="/contacts" className="hover:text-[#01bbbf] transition-colors border-b border-transparent hover:border-[#01bbbf] pb-1">Контакты</Link>
+                        <Link href="/contact" className="hover:text-[#01bbbf] transition-colors border-b border-transparent hover:border-[#01bbbf] pb-1">Контакты</Link>
                     </div>
                     {/* Socials */}
                     <div className="flex gap-2">

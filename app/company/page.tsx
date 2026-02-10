@@ -27,6 +27,41 @@ export default function CompanyPage() {
                 <StatsGrid />
             </section>
 
+            {/* Quick Links */}
+            <section>
+                <h3 className="text-2xl font-bold mb-6 text-white">Разделы</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <Link
+                        href="/company/clients"
+                        className="p-6 bg-[#252525] rounded-xl border border-[#333] hover:border-primary transition-colors group"
+                    >
+                        <h4 className="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">Клиенты</h4>
+                        <p className="text-gray-400 text-sm">С кем мы работали в Уфе</p>
+                    </Link>
+                    <Link
+                        href="/company/reviews"
+                        className="p-6 bg-[#252525] rounded-xl border border-[#333] hover:border-primary transition-colors group"
+                    >
+                        <h4 className="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">Отзывы</h4>
+                        <p className="text-gray-400 text-sm">Что говорят наши клиенты</p>
+                    </Link>
+                    <Link
+                        href="/company/faq"
+                        className="p-6 bg-[#252525] rounded-xl border border-[#333] hover:border-primary transition-colors group"
+                    >
+                        <h4 className="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">Часто задаваемые вопросы</h4>
+                        <p className="text-gray-400 text-sm">Ответы на популярные вопросы</p>
+                    </Link>
+                    <Link
+                        href="/company/price"
+                        className="p-6 bg-[#252525] rounded-xl border border-[#333] hover:border-primary transition-colors group"
+                    >
+                        <h4 className="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">Прайс-лист</h4>
+                        <p className="text-gray-400 text-sm">Стоимость наших услуг</p>
+                    </Link>
+                </div>
+            </section>
+
             {/* Advantages */}
             <section>
                 <h3 className="text-2xl font-bold mb-6 text-white">Основные преимущества нашей компании</h3>
@@ -51,7 +86,7 @@ export default function CompanyPage() {
                 <p className="text-white mb-4">
                     Мы готовы решить любую проблему с канализацией быстро и профессионально. Не откладывайте вызов специалиста!
                 </p>
-                <Link href="/contacts" className="inline-block bg-primary hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                <Link href="/contact" className="inline-block bg-primary hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
                     Вызвать мастера
                 </Link>
             </section>

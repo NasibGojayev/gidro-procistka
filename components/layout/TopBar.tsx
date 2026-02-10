@@ -14,7 +14,7 @@ export function TopBar() {
                             <span>{siteConfig.address}</span>
                         </div>
                         <span className="text-gray-300">|</span>
-                        <a href="/contacts" className="hover:text-[#01bbbf] transition-colors">
+                        <a href="/contact" className="hover:text-[#01bbbf] transition-colors">
                             Все адреса
                         </a>
                     </div>
@@ -41,7 +41,7 @@ export function TopBar() {
                             className="bg-[#01bbbf] hover:bg-[#009fa3] text-white shadow-none font-bold h-9 rounded px-6 text-xs uppercase tracking-wider"
                             asChild
                         >
-                            <a href="/contacts">
+                            <a href="/contact">
                                 Онлайн заявка
                             </a>
                         </Button>

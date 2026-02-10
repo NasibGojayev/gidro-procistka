@@ -139,7 +139,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                         )}
 
                         <div className="mt-8 flex gap-4">
-                            <Link href="/contacts" className="inline-block bg-[#01bbbf] hover:bg-[#202020] text-white font-medium py-3 px-8 rounded-[2px] transition-colors uppercase text-sm">
+                            <Link href="/contact" className="inline-block bg-[#01bbbf] hover:bg-[#202020] text-white font-medium py-3 px-8 rounded-[2px] transition-colors uppercase text-sm">
                                 Вызвать мастера
                             </Link>
                             <Link href="/services" className="inline-flex items-center text-gray-600 hover:text-[#01bbbf] font-medium py-3 px-6 transition-colors">

@@ -5,6 +5,7 @@ import { Benefits } from "@/components/home/Benefits";
 import { RequestFormSection } from "@/components/home/RequestFormSection";
 import { AboutSection } from "@/components/home/AboutSection";
 import { CoverageSection } from "@/components/home/CoverageSection";
+import { TrustSection } from "@/components/home/TrustSection";
 import { InfoStrip } from "@/components/home/InfoStrip";
 import { ReviewsSection } from "@/components/home/ReviewsSection";
 
@@ -29,6 +30,7 @@ export default function Home() {
       <RequestFormSection />
       <AboutSection />
       <CoverageSection />
+      <TrustSection />
       <InfoStrip />
       <ReviewsSection />
     </main>

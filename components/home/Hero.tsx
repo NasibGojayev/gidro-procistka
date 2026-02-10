@@ -40,7 +40,7 @@ export function Hero() {
                                     className="bg-[#00b5bb] hover:bg-[#009ca2] text-white font-medium text-sm md:text-base h-12 md:h-14 px-8 md:px-10 rounded-sm uppercase transition-all duration-300 border-none"
                                     asChild
                                 >
-                                    <a href="/contacts">
+                                    <a href="/contact">
                                         {hero.cta}
                                     </a>
                                 </Button>

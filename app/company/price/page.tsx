@@ -7,25 +7,25 @@ const pricingCategories = [
     {
         title: "Устранение засора",
         items: [
-            { service: "Устранение засора в квартире", price: "от 1500 ₽", time: "30-60 мин" },
-            { service: "Устранение засора в частном доме", price: "от 3000 ₽", time: "1-2 часа" },
-            { service: "Устранение засора наружной канализации", price: "от 5000 ₽", time: "от 1 часа" },
+            { service: "Устранение засора в квартире", price: "от 1500 ₽" },
+            { service: "Устранение засора в частном доме", price: "от 3000 ₽" },
+            { service: "Устранение засора наружной канализации", price: "от 5000 ₽" },
         ]
     },
     {
         title: "Промывка канализации",
         items: [
-            { service: "Гидродинамическая промывка труб (до 100мм)", price: "от 250 ₽/пог.м", time: "зависит от длины" },
-            { service: "Гидродинамическая промывка труб (100-300мм)", price: "от 350 ₽/пог.м", time: "зависит от длины" },
-            { service: "Профилактическая промывка", price: "от 4000 ₽", time: "1-3 часа" },
+            { service: "Гидродинамическая промывка труб (до 100мм)", price: "от 250 ₽/пог.м" },
+            { service: "Гидродинамическая промывка труб (100-300мм)", price: "от 350 ₽/пог.м" },
+            { service: "Профилактическая промывка", price: "от 4000 ₽" },
         ]
     },
     {
         title: "Телеинспекция труб",
         items: [
-            { service: "Видеодиагностика труб (до 50м)", price: "от 3000 ₽", time: "30-60 мин" },
-            { service: "Видеодиагностика сложных участков", price: "от 5000 ₽", time: "от 1 часа" },
-            { service: "Запись видеоотчета на флешку", price: "Бесплатно", time: "-" },
+            { service: "Видеодиагностика труб (до 50м)", price: "от 3000 ₽" },
+            { service: "Видеодиагностика сложных участков", price: "от 5000 ₽" },
+            { service: "Запись видеоотчета на флешку", price: "Бесплатно" },
         ]
     }
 ];
@@ -47,7 +47,6 @@ export default function PricePage() {
                                 <tr>
                                     <th className="px-6 py-4">Вид работ</th>
                                     <th className="px-6 py-4 whitespace-nowrap">Стоимость</th>
-                                    <th className="px-6 py-4 whitespace-nowrap">Время</th>
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-[#333] bg-[#252525]">
@@ -55,7 +54,6 @@ export default function PricePage() {
                                     <tr key={idx} className="hover:bg-[#2f2f2f] transition-colors">
                                         <td className="px-6 py-4 font-medium text-white">{item.service}</td>
                                         <td className="px-6 py-4 text-primary font-bold whitespace-nowrap">{item.price}</td>
-                                        <td className="px-6 py-4 whitespace-nowrap">{item.time}</td>
                                     </tr>
                                 ))}
                             </tbody>

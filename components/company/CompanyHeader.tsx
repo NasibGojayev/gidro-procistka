@@ -8,7 +8,7 @@ const routes = {
     "/company/staff": { title: "Сотрудники", label: "Наша команда" },
     "/company/reviews": { title: "Отзывы клиентов", label: "Отзывы" },
     "/company/faq": { title: "Вопрос-ответ", label: "FAQ" },
-    "/company/partners": { title: "Партнеры", label: "Партнеры" },
+    "/company/clients": { title: "Наши клиенты", label: "Клиенты" },
     "/company/price": { title: "Прайс лист на услуги", label: "Прайс-лист" },
 };
 

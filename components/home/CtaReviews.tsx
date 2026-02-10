@@ -16,7 +16,7 @@ export function CtaReviews() {
                         <h2 className="text-3xl font-bold mb-4">{ctaReviews.ctaTitle}</h2>
                         <p className="text-xl text-cyan-100 mb-8">{ctaReviews.ctaText}</p>
                         <Button size="lg" className="bg-white text-cyan-700 hover:bg-gray-100 border-0 font-bold" asChild>
-                            <a href="/contacts">{ctaReviews.ctaButton}</a>
+                            <a href="/contact">{ctaReviews.ctaButton}</a>
                         </Button>
                     </div>
 

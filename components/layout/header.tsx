@@ -21,7 +21,7 @@ const navigation = [
             { name: "Устранение засоров", href: "/ustranenie-zasora" },
         ]
     },
-    { name: "Контакты", href: "/contacts" },
+    { name: "Контакты", href: "/contact" },
 ];
 
 export function Header() {
@@ -181,7 +181,7 @@ export function Header() {
                         ))}
                         <div className="p-6">
                             <Button className="w-full bg-[#01bbbf] hover:bg-[#009fa3] text-white font-bold py-6 uppercase tracking-wider text-sm" asChild>
-                                <a href="/contacts">Оставить заявку</a>
+                                <a href="/contact">Оставить заявку</a>
                             </Button>
                         </div>
                     </nav>

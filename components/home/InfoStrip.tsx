@@ -12,7 +12,7 @@ export function InfoStrip() {
                                 className="ml-4 bg-[#01bbbf] hover:bg-[#01bbbf]/90 text-white font-bold uppercase text-xs h-8 px-4 rounded-[2px]"
                                 asChild
                             >
-                                <a href="/contacts">Оставить заявку</a>
+                                <a href="/contact">Оставить заявку</a>
                             </Button>
                         </p>
                     </div>
