@@ -1,23 +1,12 @@
 
 import { homePageData } from "@/content/pages";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 export function Hero() {
     const { hero } = homePageData;
     return (
-        <section className="relative w-full h-[600px] md:h-[700px] overflow-hidden bg-neutral-900">
-            <div className="absolute inset-0">
-                <Image
-                    src="/images/hero/hero-background.webp"
-                    alt="Hero Background"
-                    fill
-                    priority
-                    className="object-cover object-center"
-                    quality={90}
-                />
-                <div className="absolute inset-0 bg-black/50 z-10" />
-            </div>
+        <section className="relative w-full h-[600px] md:h-[700px] overflow-hidden bg-primary">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-hover z-10" />
 
             <div className="container relative z-10 mx-auto px-4 md:px-6 h-full flex items-center">
                 <div className="grid grid-cols-12 w-full">
@@ -37,7 +26,7 @@ export function Hero() {
                             <div>
                                 <Button
                                     size="lg"
-                                    className="bg-[#00b5bb] hover:bg-[#009ca2] text-white font-medium text-sm md:text-base h-12 md:h-14 px-8 md:px-10 rounded-sm uppercase transition-all duration-300 border-none"
+                                    className="bg-white hover:bg-gray-100 text-primary font-medium text-sm md:text-base h-12 md:h-14 px-8 md:px-10 rounded-sm uppercase transition-all duration-300 border-none shadow-lg"
                                     asChild
                                 >
                                     <a href="/contact">

@@ -23,7 +23,7 @@ export default function ServicesPage() {
         <main className="flex-grow">
             <Section className="pb-0 pt-8 md:pt-12">
                 <Breadcrumbs items={breadcrumbItems} />
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+                <h1 className="text-3xl md:text-4xl font-bold text-primary mb-8">
                     Услуги
                 </h1>
             </Section>

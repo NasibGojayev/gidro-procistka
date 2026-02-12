@@ -9,7 +9,7 @@ export function InfoStrip() {
                         <p className="text-lg text-gray-700">
                             Остались вопросы? Наши специалисты дежурят каждый день, без выходных и праздников.
                             <Button
-                                className="ml-4 bg-[#01bbbf] hover:bg-[#01bbbf]/90 text-white font-bold uppercase text-xs h-8 px-4 rounded-[2px]"
+                                className="ml-4 bg-primary hover:bg-primary/90 text-white font-bold uppercase text-xs h-8 px-4 rounded-[2px]"
                                 asChild
                             >
                                 <a href="/contact">Оставить заявку</a>

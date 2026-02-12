@@ -66,12 +66,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             {/* Breadcrumbs & Hero */}
             <div className="bg-gray-50 border-b border-gray-200">
                 <div className="container mx-auto px-4 md:px-6 py-4">
-                    <div className="flex items-center text-sm text-gray-500 mb-4">
-                        <Link href="/" className="hover:text-[#01bbbf] transition-colors">Главная</Link>
+                    <div className="flex items-center text-sm text-gray-600 mb-4">
+                        <Link href="/" className="hover:text-primary transition-colors">Главная</Link>
                         <span className="mx-2">/</span>
-                        <Link href="/services" className="hover:text-[#01bbbf] transition-colors">Услуги</Link>
+                        <Link href="/services" className="hover:text-primary transition-colors">Услуги</Link>
                         <span className="mx-2">/</span>
-                        <span className="text-gray-900">{service.title}</span>
+                        <span className="text-primary">{service.title}</span>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                 <div className="flex flex-col lg:flex-row gap-12">
                     {/* Main Content */}
                     <div className="lg:w-2/3">
-                        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-sans">
+                        <h1 className="text-3xl md:text-4xl font-bold text-primary mb-6 font-sans">
                             {service.title}
                         </h1>
 
@@ -100,12 +100,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
                         {/* Features */}
                         {service.features && (
-                            <div className="bg-[#f9f9f9] p-8 rounded-none border-l-4 border-[#01bbbf] mb-10">
-                                <h3 className="text-xl font-bold text-gray-900 mb-6">Что мы предлагаем:</h3>
+                            <div className="bg-[#f9f9f9] p-8 rounded-none border-l-4 border-primary mb-10">
+                                <h3 className="text-xl font-bold text-primary mb-6">Что мы предлагаем:</h3>
                                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     {service.features.map((feature, idx) => (
                                         <li key={idx} className="flex items-start gap-3">
-                                            <div className="mt-1 text-[#01bbbf]">
+                                            <div className="mt-1 text-primary">
                                                 <Check className="h-5 w-5" />
                                             </div>
                                             <span className="text-gray-700">{feature}</span>
@@ -118,19 +118,19 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                         {/* Pricing/Details Table */}
                         {service.details && (
                             <div className="mb-12">
-                                <h3 className="text-2xl font-bold text-gray-900 mb-6">Стоимость и условия</h3>
+                                <h3 className="text-2xl font-bold text-primary mb-6">Стоимость и условия</h3>
                                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                                     <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200">
                                         <div className="p-6 text-center">
-                                            <div className="text-gray-500 text-sm mb-1">Стоимость</div>
-                                            <div className="text-[#01bbbf] text-2xl font-bold">{service.details.price}</div>
+                                            <div className="text-gray-600 text-sm mb-1">Стоимость</div>
+                                            <div className="text-primary text-2xl font-bold">{service.details.price}</div>
                                         </div>
                                         <div className="p-6 text-center">
-                                            <div className="text-gray-500 text-sm mb-1">Время работы</div>
+                                            <div className="text-gray-600 text-sm mb-1">Время работы</div>
                                             <div className="text-gray-900 text-xl font-medium">{service.details.time}</div>
                                         </div>
                                         <div className="p-6 text-center">
-                                            <div className="text-gray-500 text-sm mb-1">Гарантия</div>
+                                            <div className="text-gray-600 text-sm mb-1">Гарантия</div>
                                             <div className="text-gray-900 text-xl font-medium">{service.details.warranty}</div>
                                         </div>
                                     </div>
@@ -139,10 +139,10 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                         )}
 
                         <div className="mt-8 flex gap-4">
-                            <Link href="/contact" className="inline-block bg-[#01bbbf] hover:bg-[#202020] text-white font-medium py-3 px-8 rounded-[2px] transition-colors uppercase text-sm">
+                            <Link href="/contact" className="inline-block bg-primary hover:bg-primary text-white font-medium py-3 px-8 rounded-[2px] transition-colors uppercase text-sm">
                                 Вызвать мастера
                             </Link>
-                            <Link href="/services" className="inline-flex items-center text-gray-600 hover:text-[#01bbbf] font-medium py-3 px-6 transition-colors">
+                            <Link href="/services" className="inline-flex items-center text-gray-600 hover:text-primary font-medium py-3 px-6 transition-colors">
                                 <ArrowLeft className="h-4 w-4 mr-2" />
                                 Другие услуги
                             </Link>
@@ -155,7 +155,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                         <div className="sticky top-24 space-y-8">
                             {/* Service Menu */}
                             <div className="bg-gray-50 p-6 rounded-none border border-gray-100">
-                                <h3 className="text-lg font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">
+                                <h3 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-gray-200">
                                     Наши услуги
                                 </h3>
                                 <ul className="space-y-2">
@@ -164,7 +164,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                                             <Link
                                                 href={`/${s.slug}`}
                                                 className={`block py-2 px-3 rounded transition-colors ${s.slug === service.slug
-                                                    ? "bg-[#01bbbf] text-white"
+                                                    ? "bg-primary text-white"
                                                     : "text-gray-600 hover:bg-gray-200"
                                                     }`}
                                             >
@@ -176,19 +176,19 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                             </div>
 
                             {/* Contact Box */}
-                            <div className="bg-[#202020] text-white p-8 text-center rounded-none">
+                            <div className="bg-primary text-white p-8 text-center rounded-none">
                                 <h3 className="text-xl font-bold mb-4">Нужна помощь?</h3>
-                                <p className="text-gray-400 mb-6 text-sm">
+                                <p className="text-blue-50/90 mb-6 text-sm">
                                     Свяжитесь с нами прямо сейчас, и мы проконсультируем вас по любому вопросу.
                                 </p>
                                 <a
                                     href={`tel:${siteConfig.cleanPhone}`}
-                                    className="flex items-center justify-center gap-2 text-xl font-bold text-[#01bbbf] hover:text-white transition-colors mb-2"
+                                    className="flex items-center justify-center gap-2 text-xl font-bold text-primary hover:text-white transition-colors mb-2"
                                 >
                                     <Phone className="h-5 w-5" />
                                     <span>{siteConfig.phone}</span>
                                 </a>
-                                <div className="text-xs text-gray-500">Круглосуточно, без выходных</div>
+                                <div className="text-xs text-blue-100/80">Круглосуточно, без выходных</div>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  /* Primary brand colors - CHANGE THESE to update the entire site */
+  --color-primary: #0066CC;
+  --color-primary-hover: #0052A3;
+  --color-primary-light: #3B82F6;
+  --color-primary-dark: #1E40AF;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

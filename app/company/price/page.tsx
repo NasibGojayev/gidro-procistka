@@ -33,7 +33,7 @@ const pricingCategories = [
 export default function PricePage() {
     return (
         <section className="space-y-12">
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <p className="text-lg text-white leading-relaxed">
                 Стоимость работ зависит от сложности засора, диаметра труб и используемого оборудования.
                 Точную цену мастер назовет после бесплатной диагностики на месте.
             </p>
@@ -41,8 +41,8 @@ export default function PricePage() {
             {pricingCategories.map((category, index) => (
                 <div key={index} className="space-y-4">
                     <h3 className="text-xl font-bold text-white border-l-4 border-primary pl-3">{category.title}</h3>
-                    <div className="overflow-x-auto rounded-xl border border-[#333]">
-                        <table className="w-full text-left text-sm text-gray-300">
+                    <div className="overflow-x-auto rounded-xl border border-primary">
+                        <table className="w-full text-left text-sm text-gray-200">
                             <thead className="bg-[#2A2A2A] text-white font-bold uppercase text-xs">
                                 <tr>
                                     <th className="px-6 py-4">Вид работ</th>

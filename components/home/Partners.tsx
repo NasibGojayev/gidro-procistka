@@ -19,7 +19,7 @@ export function Partners() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="row mb-10">
                     <div className="col-xs-12 col-md-8">
-                        <h2 className="text-3xl font-bold text-gray-900">{partners.title}</h2>
+                        <h2 className="text-3xl font-bold text-primary">{partners.title}</h2>
                     </div>
                 </div>
 
@@ -27,7 +27,7 @@ export function Partners() {
                     <div className="flex -ml-4 touch-pan-y">
                         {partners.items.map((partner: any, index: number) => (
                             <div key={index} className="flex-[0_0_50%] md:flex-[0_0_25%] lg:flex-[0_0_20%] min-w-0 pl-4">
-                                <div className="partner-square h-32 border border-gray-200 flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all hover:border-[#01bbbf] hover:shadow-sm bg-white relative">
+                                <div className="partner-square h-32 border border-gray-200 flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all hover:border-primary hover:shadow-sm bg-white relative">
                                     <Image
                                         src={partner.img}
                                         alt={partner.name}

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function ContactsPage() {
     return (
-        <main className="min-h-screen bg-[#1c1c1c] text-white pt-32 pb-20">
+        <main className="min-h-screen bg-primary text-white pt-32 pb-20">
             <div className="container mx-auto px-4 md:px-6">
                 {/* Breadcrumbs */}
                 <Breadcrumbs
@@ -52,7 +52,7 @@ export default function ContactsPage() {
 
                     {/* Right Column: Contact Form */}
                     <div className="order-2 lg:order-2">
-                        <section className="bg-[#252525] p-6 md:p-8 rounded-xl border border-[#333]">
+                        <section className="bg-[#252525] p-6 md:p-8 rounded-xl border border-primary">
                             <h2 className="text-2xl font-bold mb-6">Напишите нам!</h2>
                             <form className="space-y-4">
                                 <div>

@@ -10,18 +10,18 @@ export function TopBar() {
                     {/* Left Column: Address */}
                     <div className="flex items-center gap-4 text-sm text-gray-600">
                         <div className="flex items-center">
-                            <MapPin className="h-4 w-4 mr-2 text-[#01bbbf]" />
+                            <MapPin className="h-4 w-4 mr-2 text-primary" />
                             <span>{siteConfig.address}</span>
                         </div>
                         <span className="text-gray-300">|</span>
-                        <a href="/contact" className="hover:text-[#01bbbf] transition-colors">
+                        <a href="/contact" className="hover:text-primary transition-colors">
                             Все адреса
                         </a>
                     </div>
 
                     {/* Right Column: Phone + WhatsApp + Button */}
                     <div className="flex items-center gap-6">
-                        <a href={`tel:${siteConfig.cleanPhone}`} className="font-bold text-lg text-gray-900 hover:text-[#01bbbf] transition-colors">
+                        <a href={`tel:${siteConfig.cleanPhone}`} className="font-bold text-lg text-gray-900 hover:text-primary transition-colors">
                             {siteConfig.phone}
                         </a>
 
@@ -38,7 +38,7 @@ export function TopBar() {
 
                         <Button
                             size="sm"
-                            className="bg-[#01bbbf] hover:bg-[#009fa3] text-white shadow-none font-bold h-9 rounded px-6 text-xs uppercase tracking-wider"
+                            className="bg-primary hover:bg-primary-hover text-white shadow-none font-bold h-9 rounded px-6 text-xs uppercase tracking-wider"
                             asChild
                         >
                             <a href="/contact">

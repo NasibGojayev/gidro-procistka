@@ -37,7 +37,7 @@ export function ServiceCard({
 
                 {/* Content */}
                 <div className="flex flex-col flex-grow p-5 sm:p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#01bbbf] transition-colors">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
                         {title}
                     </h3>
 
@@ -47,7 +47,7 @@ export function ServiceCard({
 
                     <div className="mt-auto flex items-center justify-between">
                         {price && (
-                            <span className="text-lg font-bold text-[#01bbbf]">
+                            <span className="text-lg font-bold text-primary">
                                 {price}
                             </span>
                         )}

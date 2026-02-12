@@ -10,7 +10,7 @@ export function CoverageSection() {
                 {/* Header */}
                 <div className="row mb-12">
                     <div className="col-xs-12 col-md-8 col-md-offset-2 text-center mx-auto">
-                        <h2 className="text-3xl font-bold text-gray-900">{coverage.title}</h2>
+                        <h2 className="text-3xl font-bold text-primary">{coverage.title}</h2>
                     </div>
                 </div>
 
@@ -33,7 +33,7 @@ export function CoverageSection() {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="main-profitably--title text-[#01bbbf] text-2xl font-bold mb-2">
+                                        <div className="main-profitably--title text-primary text-2xl font-bold mb-2">
                                             {item.label}
                                         </div>
                                         <p className="text-gray-600 text-sm leading-relaxed">

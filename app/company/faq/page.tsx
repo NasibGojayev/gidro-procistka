@@ -45,7 +45,7 @@ export default function FAQPage() {
         <section>
             <div className="space-y-4">
                 {faqs.map((faq, index) => (
-                    <details key={index} className="group bg-[#252525] rounded-xl border border-[#333] overflow-hidden transition-all hover:border-gray-500 open:border-primary/50">
+                    <details key={index} className="group bg-[#252525] rounded-xl border border-primary overflow-hidden transition-all hover:border-gray-500 open:border-primary/50">
                         <summary className="flex cursor-pointer items-center justify-between p-4 font-medium text-white hover:bg-[#2a2a2a] transition-colors focus:outline-none">
                             <span className="text-lg">{faq.question}</span>
                             <span className="ml-4 flex-shrink-0 transition-transform group-open:-rotate-180">
@@ -54,7 +54,7 @@ export default function FAQPage() {
                                 </svg>
                             </span>
                         </summary>
-                        <div className="border-t border-[#333] bg-[#222] p-4 text-gray-300 leading-relaxed group-open:animate-fadeIn">
+                        <div className="border-t border-primary bg-[#222] p-4 text-gray-200 leading-relaxed group-open:animate-fadeIn">
                             {faq.answer}
                         </div>
                     </details>

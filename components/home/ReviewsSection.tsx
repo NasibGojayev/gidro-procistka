@@ -9,7 +9,7 @@ export function ReviewsSection() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="row mb-10">
                     <div className="col-xs-12 col-md-8">
-                        <h2 className="text-3xl font-bold text-gray-900">Отзывы о нас</h2>
+                        <h2 className="text-3xl font-bold text-primary">Отзывы о нас</h2>
                     </div>
                 </div>
 
@@ -19,7 +19,7 @@ export function ReviewsSection() {
                         {reviews.items.map((item, index) => (
                             <div key={index} className="item h-full">
                                 <div className="rewiew bg-white border border-gray-200 p-6 rounded-lg h-full hover:shadow-md transition-shadow">
-                                    <div className="rewiew--autor font-bold text-[#01bbbf] mb-4 text-lg">
+                                    <div className="rewiew--autor font-bold text-primary mb-4 text-lg">
                                         {item.name}
                                     </div>
 

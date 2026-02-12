@@ -13,7 +13,7 @@ export default function CompanyPage() {
     return (
         <div className="space-y-12">
             {/* Intro */}
-            <section className="text-lg text-gray-300 leading-relaxed">
+            <section className="text-lg text-white leading-relaxed">
                 <p>
                     Наша компания — это профессиональная команда сантехников с богатым опытом и современным парком оборудования.
                     Мы специализируемся на устранении засоров любой сложности, от квартирных труб до промышленных канализационных систем,
@@ -33,31 +33,31 @@ export default function CompanyPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <Link
                         href="/company/clients"
-                        className="p-6 bg-[#252525] rounded-xl border border-[#333] hover:border-primary transition-colors group"
+                        className="p-6 bg-[#252525] rounded-xl border border-primary hover:border-primary transition-colors group"
                     >
                         <h4 className="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">Клиенты</h4>
-                        <p className="text-gray-400 text-sm">С кем мы работали в Уфе</p>
+                        <p className="text-gray-300 text-sm">С кем мы работали в Уфе</p>
                     </Link>
                     <Link
                         href="/company/reviews"
-                        className="p-6 bg-[#252525] rounded-xl border border-[#333] hover:border-primary transition-colors group"
+                        className="p-6 bg-[#252525] rounded-xl border border-primary hover:border-primary transition-colors group"
                     >
                         <h4 className="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">Отзывы</h4>
-                        <p className="text-gray-400 text-sm">Что говорят наши клиенты</p>
+                        <p className="text-gray-300 text-sm">Что говорят наши клиенты</p>
                     </Link>
                     <Link
                         href="/company/faq"
-                        className="p-6 bg-[#252525] rounded-xl border border-[#333] hover:border-primary transition-colors group"
+                        className="p-6 bg-[#252525] rounded-xl border border-primary hover:border-primary transition-colors group"
                     >
                         <h4 className="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">Часто задаваемые вопросы</h4>
-                        <p className="text-gray-400 text-sm">Ответы на популярные вопросы</p>
+                        <p className="text-gray-300 text-sm">Ответы на популярные вопросы</p>
                     </Link>
                     <Link
                         href="/company/price"
-                        className="p-6 bg-[#252525] rounded-xl border border-[#333] hover:border-primary transition-colors group"
+                        className="p-6 bg-[#252525] rounded-xl border border-primary hover:border-primary transition-colors group"
                     >
                         <h4 className="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">Прайс-лист</h4>
-                        <p className="text-gray-400 text-sm">Стоимость наших услуг</p>
+                        <p className="text-gray-300 text-sm">Стоимость наших услуг</p>
                     </Link>
                 </div>
             </section>
@@ -65,7 +65,7 @@ export default function CompanyPage() {
             {/* Advantages */}
             <section>
                 <h3 className="text-2xl font-bold mb-6 text-white">Основные преимущества нашей компании</h3>
-                <ol className="list-decimal pl-5 space-y-4 text-gray-300 marker:text-primary marker:font-bold">
+                <ol className="list-decimal pl-5 space-y-4 text-white marker:text-primary marker:font-bold">
                     <li className="pl-2">
                         <strong className="text-white">Оперативность.</strong> Приезжаем на вызов в течение 60 минут в любой район Уфы.
                     </li>
@@ -82,7 +82,7 @@ export default function CompanyPage() {
             </section>
 
             {/* Closing CTA */}
-            <section className="bg-[#252525] p-6 rounded-xl border border-[#333] mt-8">
+            <section className="bg-[#252525] p-6 rounded-xl border border-primary mt-8">
                 <p className="text-white mb-4">
                     Мы готовы решить любую проблему с канализацией быстро и профессионально. Не откладывайте вызов специалиста!
                 </p>

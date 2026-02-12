@@ -9,7 +9,7 @@ export function TeamSection() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="row mb-12">
                     <div className="col-xs-12 col-md-8">
-                        <h2 className="text-3xl font-bold text-gray-900">Наши специалисты</h2>
+                        <h2 className="text-3xl font-bold text-primary">Наши специалисты</h2>
                     </div>
                 </div>
 
@@ -24,12 +24,12 @@ export function TeamSection() {
                                 />
 
                                 <div className="people--name text-center mb-2">
-                                    <span className="text-xl font-bold text-gray-800 border-b-2 border-transparent hover:border-[#01bbbf] transition-colors cursor-default">
+                                    <span className="text-xl font-bold text-gray-800 border-b-2 border-transparent hover:border-primary transition-colors cursor-default">
                                         {member.name}
                                     </span>
                                 </div>
 
-                                <div className="people--info text-center text-gray-500 text-sm px-4">
+                                <div className="people--info text-center text-gray-600 text-sm px-4">
                                     {member.role}
                                 </div>
                             </div>

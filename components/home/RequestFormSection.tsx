@@ -10,7 +10,7 @@ export function RequestFormSection() {
                 <div className="flex flex-col items-center">
                     {/* Title */}
                     <div className="max-w-2xl text-center mb-10">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-4">Акция для новых клиентов</h2>
+                        <h2 className="text-3xl font-bold text-primary mb-4">Акция для новых клиентов</h2>
                     </div>
 
                     {/* Form Container */}
@@ -24,7 +24,7 @@ export function RequestFormSection() {
                                 <input
                                     type="tel"
                                     placeholder="Телефон"
-                                    className="w-full pl-10 pr-4 h-12 border border-gray-300 rounded focus:outline-none focus:border-[#01bbbf] transition-colors text-gray-700"
+                                    className="w-full pl-10 pr-4 h-12 border border-gray-300 rounded focus:outline-none focus:border-primary transition-colors text-gray-700"
                                     required
                                 />
                             </div>
@@ -33,7 +33,7 @@ export function RequestFormSection() {
                             <div className="md:w-auto">
                                 <Button
                                     type="submit"
-                                    className="w-full md:w-auto bg-[#01bbbf] hover:bg-[#01bbbf]/90 text-white font-bold h-12 px-8 uppercase tracking-wide rounded"
+                                    className="w-full md:w-auto bg-primary hover:bg-primary/90 text-white font-bold h-12 px-8 uppercase tracking-wide rounded"
                                 >
                                     Хочу скидку 10%
                                 </Button>

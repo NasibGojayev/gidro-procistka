@@ -6,7 +6,7 @@ export function AboutSection() {
             <div className="container mx-auto px-4 md:px-6">
                 {/* About Company Text */}
                 <div className="mb-16">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-8">Как мы работаем</h2>
+                    <h2 className="text-3xl font-bold text-primary mb-8">Как мы работаем</h2>
                     <div className="font-md font-md_light text-lg text-gray-600 leading-relaxed font-light">
                         Выполняем устранение засоров в Уфе более 10 лет. Наши специалисты используют телеинспекцию для точной диагностики и подбирают оптимальный метод прочистки — механический или гидродинамический.
                     </div>
@@ -15,7 +15,7 @@ export function AboutSection() {
                 {/* Scheme Header */}
                 <div className="row mt-8 mb-8">
                     <div className="col-xs-12">
-                        <h3 className="text-2xl font-bold text-gray-900">Схема работы с нами</h3>
+                        <h3 className="text-2xl font-bold text-primary">Схема работы с нами</h3>
                     </div>
                 </div>
 
@@ -23,7 +23,7 @@ export function AboutSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                     {/* Step 1 */}
                     <div className="mt-8">
-                        <div className="font-md color-primary text-[#01bbbf] mb-6 flex justify-center md:justify-start">
+                        <div className="font-md color-primary text-primary mb-6 flex justify-center md:justify-start">
                             <div className="h-20 w-20 flex items-center justify-center">
                                 <PhoneCall className="h-16 w-16" />
                             </div>
@@ -35,7 +35,7 @@ export function AboutSection() {
 
                     {/* Step 2 */}
                     <div className="mt-8">
-                        <div className="font-md color-primary text-[#01bbbf] mb-6 flex justify-center md:justify-start">
+                        <div className="font-md color-primary text-primary mb-6 flex justify-center md:justify-start">
                             <div className="h-20 w-20 flex items-center justify-center">
                                 <FileText className="h-16 w-16" />
                             </div>
@@ -47,7 +47,7 @@ export function AboutSection() {
 
                     {/* Step 3 */}
                     <div className="mt-8">
-                        <div className="font-md color-primary text-[#01bbbf] mb-6 flex justify-center md:justify-start">
+                        <div className="font-md color-primary text-primary mb-6 flex justify-center md:justify-start">
                             <div className="h-20 w-20 flex items-center justify-center">
                                 <Truck className="h-16 w-16" />
                             </div>
@@ -59,7 +59,7 @@ export function AboutSection() {
 
                     {/* Step 4 */}
                     <div className="mt-8">
-                        <div className="font-md color-primary text-[#01bbbf] mb-6 flex justify-center md:justify-start">
+                        <div className="font-md color-primary text-primary mb-6 flex justify-center md:justify-start">
                             <div className="h-20 w-20 flex items-center justify-center">
                                 <CheckSquare className="h-16 w-16" />
                             </div>

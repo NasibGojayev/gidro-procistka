@@ -39,7 +39,7 @@ export function Benefits() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="row">
                     <div className="col-xs-12 col-md-8 col-md-offset-2 text-center mx-auto mb-12">
-                        <h2 className="text-3xl font-bold text-gray-900">Почему обращаются к нам для устранения засоров</h2>
+                        <h2 className="text-3xl font-bold text-primary">Почему обращаются к нам для устранения засоров</h2>
                     </div>
                 </div>
 
@@ -49,7 +49,7 @@ export function Benefits() {
                         return (
                             <div key={index} className="ourclients text-center p-6 hover:shadow-sm transition-shadow rounded-lg">
                                 <div className="ourclients--title flex items-center justify-center gap-4 mb-4 text-xl font-bold text-gray-800">
-                                    <span className="inline-block p-2 bg-gray-50 rounded-full text-[#01bbbf]">
+                                    <span className="inline-block p-2 bg-gray-50 rounded-full text-primary">
                                         <Icon className="h-8 w-8" />
                                     </span>
                                     <span>{item.title}</span>

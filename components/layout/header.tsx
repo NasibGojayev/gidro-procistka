@@ -15,13 +15,19 @@ const navigation = [
     {
         name: "Услуги", href: "/services",
         children: [
-            { name: "Промывка канализации", href: "/promyvka-kanalizatsii-" },
+            { name: "Промывка канализации", href: "/promyvka-kanalizatsii" },
             { name: "Прочистка канализации", href: "/prochistka-kanalizatsii" },
-            { name: "Телеинспекция труб", href: "/teleinspektsiya-trub-" },
+            { name: "Телеинспекция труб", href: "/teleinspektsiya-trub" },
             { name: "Устранение засоров", href: "/ustranenie-zasora" },
         ]
     },
     { name: "Контакты", href: "/contact" },
+];
+
+const moreLinks = [
+    { name: "Наши клиенты", href: "/company/clients" },
+    { name: "Прайс-лист", href: "/company/price" },
+    { name: "Политика конфиденциальности", href: "/privacy" },
 ];
 
 export function Header() {
@@ -38,7 +44,7 @@ export function Header() {
                         <div className="flex flex-col items-start gap-2">
                             <Link href="/" className="flex-shrink-0">
                                 <Image
-                                    src="/images/logo-gidrorobot.webp"
+                                    src="/images/gidro-robot-v1.webp"
                                     alt="Прочистка канализации"
                                     title="Прочистка канализации"
                                     width={200}
@@ -65,7 +71,7 @@ export function Header() {
                                             navigator.clipboard.writeText('+79173510409');
                                             alert('Номер скопирован!');
                                         }}
-                                        className="text-xs text-gray-500 hover:text-gray-700 underline"
+                                        className="text-xs text-gray-600 hover:text-gray-700 underline"
                                         title="Скопировать номер телефона"
                                     >
                                         (скопировать)
@@ -84,7 +90,7 @@ export function Header() {
                                 <div key={item.name} className="relative group py-8">
                                     <Link
                                         href={item.href}
-                                        className="flex items-center gap-1 text-[15px] font-bold text-gray-800 uppercase hover:text-[#01bbbf] transition-colors"
+                                        className="flex items-center gap-1 text-[15px] font-bold text-gray-800 uppercase hover:text-primary transition-colors"
                                     >
                                         {item.name}
                                         {item.children && <ChevronDown className="h-3 w-3" />}
@@ -93,12 +99,12 @@ export function Header() {
                                     {/* Dropdown */}
                                     {item.children && (
                                         <div className="absolute top-full left-0 w-64 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top z-50">
-                                            <ul className="bg-white shadow-xl rounded-sm border-t-2 border-[#01bbbf]">
+                                            <ul className="bg-white shadow-xl rounded-sm border-t-2 border-primary">
                                                 {item.children.map(child => (
                                                     <li key={child.name} className="border-b border-gray-50 last:border-0">
                                                         <Link
                                                             href={child.href}
-                                                            className="block px-6 py-3 text-sm text-gray-700 hover:text-[#01bbbf] hover:bg-gray-50 transition-colors"
+                                                            className="block px-6 py-3 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors"
                                                         >
                                                             {child.name}
                                                         </Link>
@@ -112,17 +118,19 @@ export function Header() {
 
                             {/* 'Еще' (More) Menu - Optional/Placeholder */}
                             <div className="relative group py-8">
-                                <button className="flex items-center gap-1 text-[15px] font-bold text-gray-800 uppercase hover:text-[#01bbbf] transition-colors">
+                                <button className="flex items-center gap-1 text-[15px] font-bold text-gray-800 uppercase hover:text-primary transition-colors">
                                     Еще <ChevronDown className="h-3 w-3" />
                                 </button>
-                                {/* Placeholder Dropdown for 'More' */}
+                                {/* Dropdown for 'More' */}
                                 <div className="absolute top-full right-0 w-48 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top z-50">
-                                    <ul className="bg-white shadow-xl rounded-sm border-t-2 border-[#01bbbf]">
-                                        <li className="border-b border-gray-50 last:border-0">
-                                            <Link href="/privacy" className="block px-6 py-3 text-sm text-gray-700 hover:text-[#01bbbf] hover:bg-gray-50 transition-colors">
-                                                Политика конфиденциальности
-                                            </Link>
-                                        </li>
+                                    <ul className="bg-white shadow-xl rounded-sm border-t-2 border-primary">
+                                        {moreLinks.map((link) => (
+                                            <li key={link.href} className="border-b border-gray-50 last:border-0">
+                                                <Link href={link.href} className="block px-6 py-3 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors">
+                                                    {link.name}
+                                                </Link>
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
@@ -169,7 +177,7 @@ export function Header() {
                                             <Link
                                                 key={child.name}
                                                 href={child.href}
-                                                className="block py-2 pr-4 text-sm text-gray-600 hover:text-[#01bbbf]"
+                                                className="block py-2 pr-4 text-sm text-gray-600 hover:text-primary"
                                                 onClick={() => setMobileMenuOpen(false)}
                                             >
                                                 {child.name}
@@ -179,8 +187,29 @@ export function Header() {
                                 )}
                             </div>
                         ))}
+
+                        {/* More Links for Mobile */}
+                        <div className="border-b border-gray-100">
+                            <div className="flex items-center justify-between pr-4">
+                                <span className="block p-4 text-base font-bold text-gray-800 uppercase">
+                                    Еще
+                                </span>
+                            </div>
+                            <div className="bg-gray-50 pl-4 py-2">
+                                {moreLinks.map(link => (
+                                    <Link
+                                        key={link.href}
+                                        href={link.href}
+                                        className="block py-2 pr-4 text-sm text-gray-600 hover:text-primary"
+                                        onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                        {link.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
                         <div className="p-6">
-                            <Button className="w-full bg-[#01bbbf] hover:bg-[#009fa3] text-white font-bold py-6 uppercase tracking-wider text-sm" asChild>
+                            <Button className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-6 uppercase tracking-wider text-sm" asChild>
                                 <a href="/contact">Оставить заявку</a>
                             </Button>
                         </div>

@@ -4,7 +4,7 @@ import { siteConfig } from "@/content/site";
 
 export default function ContactMap() {
     return (
-        <div className="w-full rounded-xl overflow-hidden border border-[#333] shadow-lg mb-8">
+        <div className="w-full rounded-xl overflow-hidden border border-primary shadow-lg mb-8">
             <div className="relative w-full h-[300px] md:h-[400px] bg-[#252525]">
                 {/* 
                     Yandex Map Widget 
@@ -22,7 +22,7 @@ export default function ContactMap() {
                     className="absolute inset-0 w-full h-full"
                 ></iframe>
             </div>
-            <div className="bg-[#202020] p-3 text-center text-sm text-gray-400 border-t border-[#333]">
+            <div className="bg-primary p-3 text-center text-sm text-gray-400 border-t border-primary">
                 {siteConfig.address}
             </div>
         </div>

@@ -6,7 +6,7 @@ export function EquipmentGrid() {
     const { equipment } = homePageData;
 
     return (
-        <section className="equipment bg-[#202020] pt-20 pb-0 text-white overflow-hidden font-sans">
+        <section className="equipment bg-primary pt-20 pb-0 text-white overflow-hidden font-sans">
             <div className="container mx-auto px-4 md:px-6">
                 {/* Section Header */}
                 <div className="flex flex-col lg:flex-row items-end justify-between mb-20 relative z-10">
@@ -15,7 +15,7 @@ export function EquipmentGrid() {
                             {equipment.title}
                         </h2>
                     </div>
-                    <div className="lg:w-4/12 hidden md:block text-gray-300 text-sm">
+                    <div className="lg:w-4/12 hidden md:block text-blue-50/90 text-sm">
                         <p>{equipment.description}</p>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ export function EquipmentGrid() {
                                 key={index}
                                 className={`col-span-1 ${item.widthClass}`}
                             >
-                                <div className="h-[340px] relative group bg-[#252525] hover:bg-[#2a2a2a] transition-all duration-300 overflow-hidden flex flex-col justify-between rounded-xl border border-[#333] hover:border-gray-600 shadow-lg hover:shadow-xl">
+                                <div className="h-[340px] relative group bg-[#252525] hover:bg-[#2a2a2a] transition-all duration-300 overflow-hidden flex flex-col justify-between rounded-xl border border-primary hover:border-gray-600 shadow-lg hover:shadow-xl">
                                     {/* Background Image - Contained to show full image */}
                                     <div className="absolute inset-0 z-0 p-4 flex items-center justify-center">
                                         <div className="relativePath w-full h-full relative">

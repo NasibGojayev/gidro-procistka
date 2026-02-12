@@ -16,7 +16,7 @@ export function CompanySidebar() {
 
     return (
         <aside className="company-sidebar w-full lg:w-[280px] mb-10 lg:mb-0 lg:mr-10 flex-shrink-0">
-            <nav aria-label="Company sections" className="bg-[#202020] rounded-xl overflow-hidden p-6 border border-[#333]">
+            <nav aria-label="Company sections" className="bg-primary rounded-xl overflow-hidden p-6 border border-primary">
                 <ul className="space-y-2">
                     {companyLinks.map((link) => {
                         const isActive = pathname === link.href;

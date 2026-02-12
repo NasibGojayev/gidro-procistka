@@ -12,7 +12,7 @@ export default function ReviewsPage() {
         <section>
             <div className="space-y-6">
                 {reviews.items.map((review, index) => (
-                    <div key={index} className="bg-[#252525] p-6 rounded-xl border border-[#333] hover:border-gray-600 transition-colors">
+                    <div key={index} className="bg-[#252525] p-6 rounded-xl border border-primary hover:border-gray-600 transition-colors">
                         <div className="font-bold text-lg mb-2 text-white">{review.name}</div>
                         <p className="text-gray-300 leading-relaxed">{review.text}</p>
                     </div>
